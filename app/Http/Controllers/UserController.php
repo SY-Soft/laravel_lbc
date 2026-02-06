@@ -25,6 +25,10 @@ class UserController extends Controller
     {
         return view('users.edit', compact('user'));
     }
+    public function create()
+    {
+        return view('users.create');
+    }
 
     public function update(Request $request, User $user)
     {
@@ -45,10 +49,6 @@ class UserController extends Controller
 
         return redirect()->route('users.index')
             ->with('success', 'User deleted');
-    }
-    public function create()
-    {
-        return view('users.create');
     }
 
     public function store(Request $request)
