@@ -13,7 +13,8 @@
     <div class="row my-4">
         <div class="col-12 center">
             <a href="{{ route('products.index') }}" class="btn btn-success">Products</a>
+            <a href="{{ route('users.index') }}" class="btn btn-success">Users</a>
         </div>
     </div>
 
-@endsection 
+@endsection
