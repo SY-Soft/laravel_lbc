@@ -2,7 +2,11 @@
 
 @section('content')
     <h1>Users</h1>
-
+    <div class="row my-4">
+        <div class="col-12 center">
+            <a href="{{ route('users.create') }}" class="btn btn-primary">Create</a>
+        </div>
+    </div>
     @foreach ($users as $user)
         <div>
             {{ $user->id }} — {{ $user->name }} ({{ $user->email }})
